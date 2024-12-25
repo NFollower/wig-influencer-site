@@ -11,12 +11,14 @@
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #fdfdfd;
         }
         header {
-            background: #f4b400;
+            background: linear-gradient(to right, #f4b400, #ff6b6b);
             color: #fff;
             padding: 20px 10%;
             text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
         }
         header h1 {
             margin: 0;
@@ -24,8 +26,24 @@
         header p {
             margin: 5px 0 0;
         }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin-right: 15px;
+            color: #fff;
+            text-decoration: none;
+        }
         .container {
             padding: 20px 10%;
+        }
+        .section {
+            animation: fadeIn 2s ease-in-out;
         }
         .cta {
             background: #f4b400;
@@ -46,6 +64,16 @@
             text-align: center;
             padding: 10px;
         }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -53,19 +81,27 @@
         <h1>Become a Wig Influencer Pro</h1>
         <p>Turn Your Passion for Wigs into a Thriving Career</p>
     </header>
-    
+
+    <nav>
+        <a href="#attention">Attention</a>
+        <a href="#interest">Interest</a>
+        <a href="#desire">Desire</a>
+        <a href="#action">Action</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-        <section id="attention">
+        <section id="attention" class="section">
             <h2>Attention</h2>
             <p>Have you ever dreamed of becoming a successful wig influencer but feel overwhelmed with where to start? You’re not alone! The wig industry is booming, and now is the time to position yourself as a leader in this niche.</p>
         </section>
 
-        <section id="interest">
+        <section id="interest" class="section">
             <h2>Interest</h2>
             <p>Imagine building a loyal audience, collaborating with top wig brands, and earning income doing what you love. Our coaching program is designed to teach you everything from creating engaging content to monetizing your influence.</p>
         </section>
 
-        <section id="desire">
+        <section id="desire" class="section">
             <h2>Desire</h2>
             <p>Through our exclusive step-by-step Value Ladder system, you’ll progress from learning the basics of wig influencing to mastering advanced strategies for growth and profitability. Whether you’re just starting out or looking to level up, our program is tailored to meet your needs.</p>
             <div class="cta">
@@ -74,10 +110,34 @@
             </div>
         </section>
 
-        <section id="action">
+        <section id="action" class="section">
             <h2>Action</h2>
             <p>Don’t wait another day to start your journey as a wig influencer. Spots in our coaching program are limited, so act fast!</p>
             <p><a href="#signup">Sign up for the Free Masterclass</a> or <a href="#contact">Contact Us</a> to learn more.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea><br>
+
+                <button type="submit" style="background: #f4b400; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">
+                    Send
+                </button>
+            </form>
+        </section>
+
+        <section id="testimonials" class="section" style="background: #fff3e6; padding: 20px; text-align: center;">
+            <h2>What Our Students Say</h2>
+            <blockquote>"This program transformed my career. I built my wig business in just months!" - Jane D.</blockquote>
+            <blockquote>"The strategies taught here made me a top influencer!" - Mark T.</blockquote>
         </section>
     </div>
 
