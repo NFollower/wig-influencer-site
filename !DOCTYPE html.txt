@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Formation Wig Influencer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Devenez un Wig Influencer</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="modules.html">Modules</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>Qui sommes-nous ?</h2>
+        <p>Nous sommes une équipe d'experts en perruques et influence en ligne, prêts à vous aider à réussir. Notre programme de formation est conçu pour vous fournir les outils et les stratégies nécessaires pour exceller dans l'univers des "wig influencers".</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Formation Wig Influencer. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
